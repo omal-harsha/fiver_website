@@ -1,84 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@500&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@500&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide > div {
-    margin: 0 10px;
-    
-  }
-  .slick-list {
-    margin: 0 10px;
-    width: 1300px;
-    
-  }
 
-  /*.slick-list {
-    margin: 0 -10px; 
-    padding: 0!important; 
-  }
-  
-  .slick-slide {
-    margin: 0 0px;
-    padding: 0!important; 
-  }*/
 
-  /* Styles for screens with a maximum width of 768 pixels */
-@media screen and (max-width: 768px) {
-  .slick-slider {
-    max-width: 90%;
-  }
-}
 
-/* medium screen set */
-@media screen and (max-width: 1365px) {
-  .slick-slider {
-    width: 1000px;
-    
-  }
-  .slick-slide > div {
-    margin: 0 10px;
-    
-  }
-  .slick-list {
-    margin: 0 10px;
-    width: 1000px;
-    
-  }
-}
 
-@media screen and (max-width: 1000px) {
-  .slick-slider {
-    width: 800px;
-    
-  }
-  .slick-slide > div {
-    margin: 0 10px;
-    
-  }
-  .slick-list {
-    margin: 0 10px;
-    width: 800px;
-    
-  }
-}
 
-@media screen and (max-width: 400px) {
-  .slick-slider {
-    width: 270px;
-    
-  }
-  .slick-slide > div {
-    margin: 0 10px;
-    
-  }
-  .slick-list {
-    margin: 0 10px;
-    width: 270px;
-    
-  }
-}
 
 .slick-prev:before,
 .slick-next:before {
@@ -88,7 +20,7 @@
 
 
 
-/* styles.css */
+
 .hover\:scale-x-100:hover {
   transform-origin: bottom;
   transform: scaleX(1);
@@ -108,7 +40,7 @@
   transition: 0.25s ease-in-out;
   margin-top: 5px;
   
-  //transform:scaleX(0.5);
+ 
 }
 .icon-class:hover::after{
   content: '';
@@ -120,4 +52,17 @@
   transform-origin: bottom right;
 }
 
+@media screen and (min-width: 600px) {
+.myComponent {
+  background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1160,dpr_1.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png");
+}
 
+}
+
+
+@media screen and (min-width: 600px) {
+.men {
+  background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_1.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608122/bg-signup-1400-x1.png");
+}
+
+}

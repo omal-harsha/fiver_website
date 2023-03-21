@@ -2,21 +2,24 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import './slider1.css'
 import { images } from './data.js';
 import { UilArrowCircleLeft,UilArrowCircleRight } from '@iconscout/react-unicons'
+import {guideData} from './guideData.js';
 
 function Cover(){
 
     const settings = {
-        dots: false,
+      arrows: true,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 5,
         initialSlide: 0,
         infinite: true,
-        //nextArrow: true,  <UilArrowCircleRight/>,
-        //prevArrow: true, <UilArrowCircleLeft/>,
+        nextArrow:   <UilArrowCircleRight/>,
+        prevArrow:  <UilArrowCircleLeft/>,
         
         responsive: [
           {
@@ -60,8 +63,8 @@ function Cover(){
                  <img src={image.image} alt="Image" className="w-full mx-auto h-80" />
               </div>*/
 
-                <div className="relative justify-center mx-auto ">
-                <div href="#" className="bg-white rounded-md overflow-hidden shadow-md hover:opacity-90 duration-300">
+                <div className=" relative justify-center ">
+                <div href="#" className="bg-white rounded-md overflow-hidden shadow-md hover:opacity-90 duration-300 ">
                   <img src={image.image} alt="Image" className="w-max h-max" />
                   <div className="absolute bottom-0 left-5 -top-60 text-white flex flex-col items-start justify-center">
                     <a href="#" className="text-sm font-semibold">{image.text}</a>
@@ -73,8 +76,6 @@ function Cover(){
 
             ))}
             </Slider>
-            
-
         </div>
         </div>
     )

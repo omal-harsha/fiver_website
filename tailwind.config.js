@@ -21,10 +21,17 @@ module.exports = {
         FontGray: '#B5B6BA',
         darkFontGray: '#404145',
         blackGray: '#222325',
+        darkBlue:'#0D084D',
+        purpleBg: '#584AFF',
+        textGreen: '#003912',
+        lightBlue: '#446EE7',
+        hoverGray: '#D4DEFB',
+        maroonBg: '#53192A',
       }
     },
     fontFamily:{
-      happyMonkey : ['Happy Monkey']
+      happyMonkey : ['Happy Monkey'],
+      playfair : ['Playfair Display'],
     },
   },
   plugins: [],
